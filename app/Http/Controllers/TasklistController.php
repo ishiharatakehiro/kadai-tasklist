@@ -102,7 +102,7 @@ class TasklistController extends Controller
     public function destroy($id)
     {
         $tasklist = Tasklist::find($id);
-        $tasklist->delete();
+        $tasklist   ->delete();
 
         return redirect('/');
     }
